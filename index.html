@@ -1,269 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
+<title>DileepSurya</title>
+<link rel = "icon" href =  "data:image/png;base64,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" 
+        type = "image/x-icon"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<h1 class="text-light">I am Dileep Surya</h1>
+<link rel="stylesheet" href="style.css">
+<h3>Things i Know</h3>
+<i class="fab fa-python"></i>
+<i class="fab fa-html5"></i>
+<i class="fab fa-css3-alt"></i>
+<i class="fab fa-js-square"></i>
+<i class="fab fa-react"></i>
+<i class="fas fa-code"></i>
+<h6> . . . </h6>
+<h3>Tools i Use</h3>
+<img src="https://img.icons8.com/fluent-systems-filled/24/000000/python.png"/>
+<img src="https://img.icons8.com/ios-glyphs/30/000000/visual-studio.png"/>
+<img src="https://img.icons8.com/windows/32/000000/codepen.png"/>
+<img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/>
+<h6> . . . </h6>
+<div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons"  >
+	<a href="https://drive.google.com/file/d/1HztKrczho1Lk6Uk2xc_nwpmZct-FqyAp/view?usp=sharing" target="blank" class="d-block btn btn-outline-light" download><i class="fas fa-file-download mr-2"></i>Download Resume</a>
+</div>
 
-<html lang="en-gb" class="no-js">
-<
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <title>dileepportfolio</title>
-    <meta name="description" content="9966599725">
-    <meta name="author" content="WebThemez">
-    
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
-    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
-    
-    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-    
-    <link href="font/css/font-awesome.min.css" rel="stylesheet">
-</head>
+<h6 class="text-light small font-weight-bold"><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Dileep Surya</h6>
 
-<body>
-    <header class="header">
-        <div class="container">
-            <nav class="navbar navbar-inverse" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="#" class="navbar-brand scroll-top logo"><b>DileepSurya portfolio</b></a>
-                </div>
-                <!--/.navbar-header-->
-                <div id="main-nav" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav" id="mainNav">
-                        <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-                        <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-                        <li><a href="#skills" class="scroll-link">Skills</a></li>
-                       
-                        
-                        <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
-                    </ul>
-                </div>
-                <!--/.navbar-collapse-->
-            </nav>
-            <!--/.navbar-->
-        </div>
-        <!--/.container-->
-    </header>
-    <!--/.header-->
-    <div id="#top"></div>
-    <section id="home">
-        <div class="banner-container">
-            <img src="images/banner-bg.jpg" alt="banner" />
-            <div class="container banner-content">
-                <div id="da-slider" class="da-slider">
-                    <div class="da-slide">
-                        <h2>dileep surya</h2>
-                        <p>student at GITAM University,Visakhapatnam</p>
-                        <div class="da-img"></div>
-                    </div>
-                    <div class="da-slide">
-                        <h2>intrests</h2>
-                        <p>webdevelopment</p>
-                        <div class="da-img"></div>
-                    </div>
-                    <div class="da-slide">
-                        <h2>HTML5/CSS3</h2>
-                        <p>HTML5 is a markup language used for structuring and presenting Web.</p>
-                        <div class="da-img"></div>
-                    </div>
-                    <div class="da-slide">
-                        <h2>JavaScript</h2>
-                        <p>Write Less, Do More...</p>
-                        <div class="da-img"></div>
-                    </div>
-				<!--  <nav class="da-arrows">
-                        <span class="da-arrows-prev"></span>
-                        <span class="da-arrows-next"></span>
-                    </nav> -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="introText">
-        <div class="container">
-            <div class="text-center">
-            <h1>hello there..!</h1>
-            </div>
-        </div>
-
-    </section>
-    <!--About-->
-    <section id="aboutUs" class="secPad">
-        <div class="container">
-            <div class="heading text-center">
-                <!-- Heading -->
-                <h2>I am Dileep, a student</h2>
-                <p>I am pursuing my b.tech at GITAM University in electronics and communication engineering.</p>
-            </div>
-            <div class="row">
-                <!-- item -->
-                <div class="col-md-4 text-center tileBox">
-                   <div class="txtHead"> <i class="fa fa-desktop"></i>
-                    <h3>web design<span class="id-color"></span></h3></div>
-                    <p>web design is the front end part of the web development.it is the server side programming language.</p>
-                </div>
-                <!-- end: -->
-
-                <!-- item -->
-                <div class="col-md-4 text-center tileBox">
-                    <div class="txtHead"><i class="fa fa-css3"></i>
-                    <h3>HTML5/CSS3 <span class="id-color"></span></h3></div>
-                    <p> HTML,CSS are the main basic markup and styling languages to design a website</p>
-                </div>
-                <!-- end: -->
-
-                <!-- item -->
-                <div class="col-md-4 text-center tileBox">
-                    <div class="txtHead"><i class="fa fa-lightbulb-o"></i>
-                    <h3>JavaScript <span class="id-color"></span></h3></div>
-                    <p>JavaScript is a programming language mostly used in web development applications and also mobile applications</p>
-                </div>
-                <!-- end: -->
-            </div>
-        </div>
-    </section>
-    
-    <!--Skills-->
-    <section id="skills" class="secPad white">
-    	<div class="container">
-        <div class="heading text-center">
-                <!-- Heading -->
-                <h2>My Skills</h2>
-                <p></p>
-            </div>
-        	<div class="row">
-                <div class="col-sm-6">
-                    <h2>Programming <strong>Skills</strong></h2>
-                    <p class="mrgBtm20">
-                        It takes knowledge, smart work, and dedication to make great ideas come to life.
-                
-                    </p>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">HTML5</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                                    <span class="sr-only">90% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">CSS/CC3</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                                    <span class="sr-only">90% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">JavaScript</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                    <span class="sr-only">80% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-					<div class="row">
-                        <div class="col-md-2 skilltitle">python</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                    <span class="sr-only">80% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-              
-	<!--Contact -->
-    <section id="contactUs" class="page-section secPad">
-        <div class="container">
-
-            <div class="row">
-                <div class="heading text-center">
-                    <!-- Heading -->
-                    <h2>Let's Keep In Touch!</h2>
-                    <p>Thank you for visiting out my profile. If you would like to get into contact with me, please fill out the form below.</p>
-                </div>
-            </div>
-
-            <div class="row mrgn30">
-
-                <form method="post" action="" id="contactfrm" role="form" text-align="center">
-
-                    <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="comments">Comments</label>
-                            <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
-                        </div>
-                        <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
-                        <div class="result"></div>
-                    </div>
-                </form>
-                <div class="col-sm-4">
-                    <h4>Address:</h4>
-                    <address>
-                        ganapathi nagar<br>
-                        kothapeta, 533223<br>
-                        east godavari,Andhra Pradesh
-                        <br>
-                    </address>
-                    <h4>Phone:</h4>
-                    <address>
-                        +91 9966599725<br>
-                    </address>
-                </div>
-            </div>
-        </div>
-        <!--/.container-->
-    </section>
-    <footer>
-        <div class="container">
-            <div class="social text-center">
-                <a href="https://twitter.com/dileepsurya17" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.facebook.com/dileep.surya.52" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.instagram.com/dileep_surya_/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
-                <a href="https://github.com/DileepSurya/dileepsurya.github.io/tree/a9fa0a9008f14dfdefc192852118a5fcad1079b7" target="_blank"><i class="fa fa-github"></i></a>
-            </div>
-			
-
-
-            <div class="clear"></div>
-            <!--CLEAR FLOATS-->
-        </div>
-    
-    <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
-
-    <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
-    <script src="js/modernizr-latest.js"></script>
-    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
-    <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-    <script src="js/jquery.nav.js" type="text/javascript"></script>
-    <script src="js/jquery.cslider.js" type="text/javascript"></script>
-    <script src="js/custom.js" type="text/javascript"></script>
-    <script src="js/owl-carousel/owl.carousel.js"></script>
-</body>
-</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
